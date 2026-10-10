@@ -1,0 +1,14 @@
+### PUT
+PUT http://localhost:3001/mahasiswa/1
+Content-Type: application/json
+
+{ "nama": "Ollie Baru", "email": "ollie@baru.com", "jurusan": "Teknik Informatika" }
+
+### PATCH
+PATCH http://localhost:3001/mahasiswa/2
+Content-Type: application/json
+
+{ "nama": "Jake Updated" }
+
+### DELETE
+DELETE http://localhost:3001/mahasiswa/3
