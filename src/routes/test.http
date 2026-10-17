@@ -1,3 +1,5 @@
+### ===== MAHASISWA =====
+
 ### PUT
 PUT http://localhost:3001/mahasiswa/1
 Content-Type: application/json
@@ -12,3 +14,26 @@ Content-Type: application/json
 
 ### DELETE
 DELETE http://localhost:3001/mahasiswa/3
+
+### ===== PRODUK =====
+
+### CREATE produk
+POST http://localhost:3001/produk
+Content-Type: application/json
+
+{ "namaBarang": "StickerEnchin", "stock": 7, "harga": 80000 }
+
+### READ semua produk
+GET http://localhost:3001/produk
+
+### READ satu produk
+GET http://localhost:3001/produk/6
+
+### UPDATE produk
+PUT http://localhost:3001/produk/6
+Content-Type: application/json
+
+{ "namaBarang": "EnchinLamp", "stock": 17, "harga": 1200000 }
+
+### DELETE produk
+DELETE http://localhost:3001/produk/4

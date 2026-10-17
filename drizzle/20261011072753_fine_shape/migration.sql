@@ -1,0 +1,9 @@
+CREATE TABLE "produk" (
+	"id" integer PRIMARY KEY GENERATED ALWAYS AS IDENTITY (sequence name "produk_id_seq" INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START WITH 1 CACHE 1),
+	"namaBarang" varchar(255) NOT NULL,
+	"stock" integer DEFAULT 0,
+	"harga" integer NOT NULL,
+	"createdAt" timestamp DEFAULT now()
+);
+--> statement-breakpoint
+ALTER TABLE "users" DROP COLUMN "createdAt";

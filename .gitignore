@@ -1,1 +1,2 @@
-git config --global user.name "zeedakiela"
+node_modules
+.env
